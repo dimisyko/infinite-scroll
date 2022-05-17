@@ -16,9 +16,9 @@
         })
     }
     if("ontouchstart" in window){
-        el.addEventListener('touchstart', anim);
-        el.addEventListener('touchmove', anim);
-        el.addEventListener('touchend',anim);
+        window.addEventListener('touchstart', anim);
+        window.addEventListener('touchmove', anim);
+        window.addEventListener('touchend',anim);
      }
 
     anim(img[0], 0)
