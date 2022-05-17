@@ -1,5 +1,5 @@
 (function () {
-    const title = document.querySelectorAll('.blocImg')
+    const img = document.querySelectorAll('.blocImg')
     function anim(el, init) {
         setInterval(() => {
             if (init > 100) {
