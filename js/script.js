@@ -16,6 +16,6 @@
         })
     }
 
-    anim(title[0], 0)
-    anim(title[1], -100)
+    anim(img[0], 0)
+    anim(img[1], -100)
 })()
