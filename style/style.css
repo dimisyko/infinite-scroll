@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Mak";
+    overflow: hidden;
+  
+}
+
+.bloc{
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+.blocImg{
+position: absolute;
+width: 100%;
+}
+.image{
+    width: 100%;
+    margin-bottom:100px
+
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
