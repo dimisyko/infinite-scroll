@@ -14,11 +14,12 @@
             init -= (e.deltaY - 0.6) / 70
             el.style.transform = 'translate3d(0, ' + init + '%, 0px)'
         })
-        window.addEventListener('touchmove', function(e){
-            init -= (e.deltaY - 0.6) / 70
-            el.style.transform = 'translate3d(0, ' + init + '%, 0px)'
-        })
     }
+    if("ontouchstart" in window){
+        el.addEventListener('touchstart', anim);
+        el.addEventListener('touchmove', anim);
+        el.addEventListener('touchend',anim);
+     }
 
     anim(img[0], 0)
     anim(img[1], -100)
