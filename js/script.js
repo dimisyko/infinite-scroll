@@ -15,11 +15,6 @@
             el.style.transform = 'translate3d(0, ' + init + '%, 0px)'
         })
     }
-    if("ontouchstart" in window){
-        window.addEventListener('touchstart', anim);
-        window.addEventListener('touchmove', anim);
-        window.addEventListener('touchend',anim);
-     }
 
     anim(img[0], 0)
     anim(img[1], -100)
