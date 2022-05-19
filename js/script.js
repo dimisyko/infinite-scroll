@@ -5,7 +5,7 @@
             if (init > 100) {
                 init -= 100 * 2
             }
-            if (init < -100) {
+           else if (init < -100) {
                 init -= -100 * 2
             }
             el.style.transform = 'translate3d(0, ' + init + '%, 0px)'
