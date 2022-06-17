@@ -22,7 +22,7 @@
 
         function move(e) {
             const touchY = e.touches[0].clientY
-            init += (touchY - startTouch) / 10
+            init += (touchY - startTouch) * 0.6
             el.style.transform = 'translate3d(0, ' + init + '%, 0px)'
             startTouch = touchY
         }
